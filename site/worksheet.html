@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Answer a few quick questions. No data leaves your browser — this page is a little script that runs locally and suggests a match from this directory, p">
+<meta name="referrer" content="no-referrer">
+<title>Pick Your First Project — Kitchen-Table Volunteering</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="site">
+<header class="site-header">
+  <p class="site-title"><a href="index.html">Kitchen-Table Volunteering</a></p>
+  <p class="site-tagline">Free volunteering you can do from a kitchen table — no accounts, no tracking.</p>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="worksheet.html">Find your first project</a>
+  </nav>
+</header>
+<main>
+<h1>Pick Your First Project</h1>
+<p>Answer a few quick questions. No data leaves your browser — this page is a little script that runs locally and suggests a match from this directory, plus a gentle plan for your first week. You can change your answers and re-run as often as you like.</p>
+<div class="worksheet" id="worksheet">
+<div class="ws-q">
+  <p><strong>1. How much time can you honestly give this week?</strong></p>
+  <label><input type="radio" name="time" value="tiny" checked> Little sips — under 30 minutes, whenever a window opens</label>
+  <label><input type="radio" name="time" value="hour"> About an hour, once or twice this week</label>
+  <label><input type="radio" name="time" value="committed"> I can commit to training and regular hours</label>
+</div>
+<div class="ws-q">
+  <p><strong>2. Do you want to talk to people?</strong></p>
+  <label><input type="radio" name="people" value="no" checked> Not really — let me work alone</label>
+  <label><input type="radio" name="people" value="typing"> Text/chat is fine</label>
+  <label><input type="radio" name="people" value="voice"> Yes — calls, video, or live sessions</label>
+</div>
+<div class="ws-q">
+  <p><strong>3. Which sounds more like you this month?</strong></p>
+  <label><input type="radio" name="mode" value="head" checked> Quiet focus: reading, typing, puzzling things out</label>
+  <label><input type="radio" name="mode" value="hands"> Making things with my hands</label>
+  <label><input type="radio" name="mode" value="fixing"> Clicking around apps and sites and noticing what bugs me</label>
+</div>
+<div class="ws-q">
+  <p><strong>4. Are you 18 or older?</strong></p>
+  <label><input type="radio" name="adult" value="adult" checked> Yes</label>
+  <label><input type="radio" name="adult" value="teen"> Not yet (or I'm picking for a teen)</label>
+</div>
+<p><button type="button" id="ws-run" class="ws-btn">Show my match</button></p>
+<div id="ws-result" class="ws-result" hidden></div>
+</div>
+<h2>How the worksheet picks</h2>
+<p>The script scores each of the six directory entries against your answers and shows the best fit with an honest note about why. It is deliberately simple: it applies the same guidance the entries give in plain language — age rules, training time, whether you interact with people — and it is meant to get you <em>started</em>, not to seal your fate. If the first match doesn't feel right, run it again or just pick the second-place suggestion.</p>
+</main>
+<footer class="site-footer">
+  <p>Made by Asdale Dynamics, LLC. Free to copy and share under the MIT License — see LICENSE.</p>
+  <p>This site is static text about volunteering ideas; every program's own pages have the official requirements. No accounts, no cookies, no analytics, no tracking.</p>
+</footer>
+</div>
+<script src="assets/worksheet.js" defer></script>
+</body>
+</html>
